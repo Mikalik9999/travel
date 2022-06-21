@@ -1,0 +1,194 @@
+.logo {
+    display: flex;
+    width: 216px;
+    height: 31px;
+    margin:  25px 158px 34px 120px;
+    top: 25px;
+}
+.textLogo {
+    width: 180px;
+    height: 31px;
+    left: 156px;
+    top: 25px;
+    margin-left: 6px;
+
+    font-family: 'Magra',serif;
+    font-style: normal;
+    font-weight: 540;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #FFFFFF;
+
+}
+header{
+    background-image: url("/image/header.png") ;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 765px;
+}
+
+nav {
+    width: 527px;
+    height: 21px;
+    margin: 35px 0 34px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-ul > li {
+    list-style-type: none;
+    color: #FFFFFF;
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.nav-ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.logoNav{
+    display: flex;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 103px;
+    height: 41px;
+    left: 196px;
+    top: 25px;
+    color: #FFFFFF;
+
+    background: #0D606F;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+
+    font-size: 16px;
+    margin: 25px 120px 24px 196px;
+}
+
+
+.header-info {
+    width: 892px;
+    height: 422px;
+    margin: 32px 428px 221px 120px;
+    color: #FFFFFF;
+}
+
+.header-info >h1 {
+    font-family: 'Aleo',serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    margin: 0;
+}
+
+.header-info > h4 {
+    font-family: 'Aleo',serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 32px 0 46px 0;
+}
+
+.search {
+    width: 892px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search > h4 {
+    font-family: 'Aleo',serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 32px 0 41px 41px;
+
+    color: #F2785C;
+}
+.search > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    margin-right: 18px;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+article > div {
+    display: flex;
+    flex-direction: column;
+}
+
+article > div > h2 {
+
+    width: 611px;
+    height: 53px;
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 80px 0 0 414px;
+}
+
+.steps {
+    width: 1177px;
+    height: 154px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.stepsDoing {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.tellSteps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

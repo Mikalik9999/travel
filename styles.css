@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1440px;
     padding: 0;
@@ -54,6 +58,13 @@ nav {
 .nav-ul > li > a {
     text-decoration:none;
     color: #FFFFFF;
+
+}
+
+.nav-ul > li > a:hover {
+    text-decoration:none;
+    color: black;
+
 }
 
 .nav-ul {
@@ -231,7 +242,6 @@ article > div > h2 {
     background: url("/image/spain.jpg") 100% 100% no-repeat;
     width: 800px;
     height: 800px;
-
     font-family: 'Red Hat Text',serif;
     font-style: normal;
     font-weight: 500;
@@ -347,6 +357,11 @@ article > div > h2 {
     margin: 0 0 30px 120px;
 }
 
+.utah:hover, .long:hover, .thailand:hover, .tellSteps:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .long {
     display: flex;
     margin: 0 0 40px 120px;
@@ -437,4 +452,28 @@ header, section {
     background-attachment: fixed;
 }
 
-.nav-ul
+button {
+    cursor: pointer ;
+}
+
+button:hover {
+    background: black;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+
+li:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    text-decoration: underline;
+}
+
+footer > ul > li > a > img:hover {
+    opacity: 0.5;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+}

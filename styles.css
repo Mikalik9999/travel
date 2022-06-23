@@ -1,3 +1,7 @@
+body {
+    width: 1440px;
+}
+
 .logo {
     display: flex;
     width: 216px;
@@ -126,7 +130,7 @@ nav {
 
     color: #F2785C;
 }
-.search > button {
+.search > button, .more {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,15 +152,16 @@ nav {
     flex: none;
     order: 0;
     flex-grow: 0;
+    opacity: 1;
 }
 
 article > div {
     display: flex;
     flex-direction: column;
+    height: 424px;
 }
 
 article > div > h2 {
-
     width: 611px;
     height: 53px;
     font-family: 'Red Hat Text',serif;
@@ -165,7 +170,7 @@ article > div > h2 {
     font-size: 40px;
     line-height: 53px;
     color: #F2785C;
-    margin: 80px 0 0 414px;
+    margin: 80px 0 40px 414px;
 }
 
 .steps {
@@ -173,6 +178,7 @@ article > div > h2 {
     height: 154px;
     display: flex;
     justify-content: space-between;
+    margin-left: 131px;
 
 }
 
@@ -192,3 +198,226 @@ article > div > h2 {
     justify-content: space-around;
     align-items: center;
 }
+
+.popular {
+    width: 2520px;
+    height: 1042px;
+}
+
+.popular > h2 {
+    margin: 0 0 46px 470px;
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+
+.country {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 60px;
+    width: 1440px;
+    overflow:hidden;
+}
+
+.spain, .japan, .usa {
+    background: url("/image/spain.png") 100% 100% no-repeat;
+    width: 800px;
+    height: 800px;
+
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+}
+
+.spain {
+    position: relative;
+    left: -520px;
+}
+
+.spain > p, .japan > p, .usa > p{
+    margin: 718px 677px 40px 15px;
+}
+
+.japan{
+    background: url("/image/japan.png") 100% 100% no-repeat;
+    position: relative;
+    left: -520px;
+}
+
+.usa {
+    background: url("/image/usa.png") 100% 100% no-repeat;
+    position: relative;
+    left: -520px;
+}
+
+.nextCountry {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    margin: 24px 679px 40px 671px;
+    width: 80px;
+    height: 20px;
+}
+
+.nextSpain {
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 10px;
+}
+
+.nextJapan {
+    width: 20px;
+    height: 20px;
+    background: #F2785C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 10px;
+}
+.nextUsa {
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border-radius: 10px;
+}
+
+.more{
+    flex-direction: row-reverse;
+    margin: 0 0 0 607px;
+    padding: 0;
+
+}
+
+.more > p {
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.stories {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 80px 0 40px 552px;
+}
+
+.thailand {
+    display: flex;
+    margin: 0 0 30px 120px;
+}
+
+.utah {
+    display: flex;
+    margin: 0 0 30px 120px;
+}
+
+.long {
+    display: flex;
+    margin: 0 0 40px 120px;
+}
+
+.thailand > div, .utah > div, .long > div {
+    margin-left: 40px;
+    width: 760px;
+}
+
+.thailand > div > h4, .utah > div > h4, .long > div > h4 {
+    font-family: 'Aleo',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0 0 24px 0;
+}
+
+.thailand > div > p, .utah > div > p, .long > div > p{
+    font-family: 'Aleo',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: red;
+    padding: 0 123px 0 590px;
+}
+
+footer > p {
+    font-family: 'Red Hat Text',serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+footer > div {
+    width: 141px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block {
+    width: 1300px;
+    height: 1300px;
+    display:inline-block;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 41px;
+    padding-top: 40px;
+}
+
+footer, .stories {
+    background-image: url("image/global.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.more {
+    opacity: 1;
+}
+

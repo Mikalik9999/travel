@@ -7,6 +7,7 @@ body {
     padding: 0;
     background: #e5e5e5;
     margin: auto;
+    position: relative;
 }
 
 .logo {
@@ -329,6 +330,10 @@ article > div > h2 {
 }
 
 .stories {
+    background-image: url("image/global.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 61px;
     display: flex;
     flex-direction: column;
 }
@@ -442,17 +447,6 @@ footer > ul > li {
     padding-bottom: 41px;
 }
 
-.stories {
-    background-image: url("image/global.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-bottom: 61px;
-}
-
-.more {
-    opacity: 1;
-}
-
 section {
     background-image: url("/image/header.jpg") ;
     background-repeat: no-repeat;
@@ -486,6 +480,3 @@ footer > ul > li > a > img:hover {
     transition: all 0.5s ease;
 }
 
-body {
-    position: relative;
-}

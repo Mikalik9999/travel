@@ -219,7 +219,8 @@ article > div > h2 {
 }
 
 .destinations > h2 {
-    margin: 0 0 46px 470px;
+    margin: 0;
+    padding: 0 0 46px 470px;
     font-family: 'Red Hat Text',serif;
     font-style: normal;
     font-weight: 500;
@@ -233,7 +234,7 @@ article > div > h2 {
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
-    gap: 60px;
+    gap: 70px;
     width: 1440px;
     overflow:hidden;
 }
@@ -245,7 +246,7 @@ article > div > h2 {
     font-family: 'Red Hat Text',serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 31px;
     line-height: 42px;
     color: #FFFFFF;
     left: 0;
@@ -372,6 +373,10 @@ article > div > h2 {
     width: 760px;
 }
 
+.thailand > img, .utah > img, .long > img {
+    border-radius: 16px;
+}
+
 .thailand > div > h4, .utah > div > h4, .long > div > h4 {
     font-family: 'Aleo',serif;
     font-style: normal;
@@ -435,7 +440,6 @@ footer > ul > li {
 footer, .stories {
     background-image: url("image/global.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: bottom;
     background-attachment: fixed;
 }
@@ -447,7 +451,6 @@ footer, .stories {
 header, section {
     background-image: url("/image/header.jpg") ;
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: top;
     background-attachment: fixed;
 }

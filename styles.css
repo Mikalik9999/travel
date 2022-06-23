@@ -1,5 +1,8 @@
 body {
     width: 1440px;
+    padding: 0;
+    background: #e5e5e5;
+    margin: auto;
 }
 
 .logo {
@@ -15,21 +18,18 @@ body {
     left: 156px;
     top: 25px;
     margin-left: 6px;
-
+    display: flex;
+    align-items: center;
     font-family: 'Magra',serif;
     font-style: normal;
     font-weight: 540;
     font-size: 32px;
     line-height: 39px;
-
     color: #FFFFFF;
-
 }
+
 header{
-    background-image: url("/image/header.png") ;
-    background-repeat: no-repeat;
     width: 1440px;
-    height: 765px;
 }
 
 nav {
@@ -64,35 +64,31 @@ nav {
     box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
 }
 
-.login{
+.logoNav > button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     width: 103px;
     height: 41px;
     left: 196px;
     top: 25px;
     color: #FFFFFF;
-
     background: #0D606F;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-
     font-size: 16px;
     margin: 25px 120px 24px 196px;
 }
 
-
 .header-info {
     width: 892px;
     height: 422px;
-    margin: 32px 428px 221px 120px;
+    padding: 32px 428px 221px 120px;
     color: #FFFFFF;
 }
 
-.header-info >h1 {
+.header-info > h1 {
     font-family: 'Aleo',serif;
     font-style: normal;
     font-weight: 700;
@@ -127,9 +123,9 @@ nav {
     font-size: 24px;
     line-height: 29px;
     padding: 32px 0 41px 41px;
-
     color: #F2785C;
 }
+
 .search > button, .more {
     display: flex;
     flex-direction: row;
@@ -153,6 +149,10 @@ nav {
     order: 0;
     flex-grow: 0;
     opacity: 1;
+}
+
+article {
+    background-color: #FFFFFF;
 }
 
 article > div {
@@ -179,7 +179,6 @@ article > div > h2 {
     display: flex;
     justify-content: space-between;
     margin-left: 131px;
-
 }
 
 .stepsDoing {
@@ -199,12 +198,11 @@ article > div > h2 {
     align-items: center;
 }
 
-.popular {
-    width: 2520px;
-    height: 1042px;
+.destinations {
+    background-color: #FFFFFF;
 }
 
-.popular > h2 {
+.destinations > h2 {
     margin: 0 0 46px 470px;
     font-family: 'Red Hat Text',serif;
     font-style: normal;
@@ -225,7 +223,7 @@ article > div > h2 {
 }
 
 .spain, .japan, .usa {
-    background: url("/image/spain.png") 100% 100% no-repeat;
+    background: url("/image/spain.jpg") 100% 100% no-repeat;
     width: 800px;
     height: 800px;
 
@@ -246,17 +244,18 @@ article > div > h2 {
 }
 
 .spain > p, .japan > p, .usa > p{
-    margin: 718px 677px 40px 15px;
+    padding: 718px 677px 40px 15px;
+    margin: 0;
 }
 
 .japan{
-    background: url("/image/japan.png") 100% 100% no-repeat;
+    background: url("/image/japan.jpg") 100% 100% no-repeat;
     position: relative;
     left: -520px;
 }
 
 .usa {
-    background: url("/image/usa.png") 100% 100% no-repeat;
+    background: url("/image/usa.jpg") no-repeat;
     position: relative;
     left: -520px;
 }
@@ -305,10 +304,6 @@ article > div > h2 {
     flex-direction: row-reverse;
     margin: 0 0 0 607px;
     padding: 0;
-
-}
-
-.more > p {
     font-family: 'Red Hat Text',serif;
     font-style: normal;
     font-weight: 500;
@@ -320,17 +315,21 @@ article > div > h2 {
 .stories {
     display: flex;
     flex-direction: column;
-
 }
 
-h2 {
+.sectionStories {
+    background-color: #FFFFFF;
+}
+
+.sectionStories > h2 {
     font-family: 'Red Hat Text',serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 53px;
     color: #F2785C;
-    margin: 80px 0 40px 552px;
+    padding: 80px 0 40px 552px;
+    margin: 0;
 }
 
 .thailand {
@@ -363,7 +362,7 @@ h2 {
     margin: 0 0 24px 0;
 }
 
-.thailand > div > p, .utah > div > p, .long > div > p{
+.thailand > div > p, .utah > div > p, .long > div > p {
     font-family: 'Aleo',serif;
     font-style: normal;
     font-weight: 400;
@@ -372,7 +371,7 @@ h2 {
     color: #0D606F;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     background: red;
@@ -388,11 +387,15 @@ footer > p {
     color: #FFFFFF;
 }
 
-footer > div {
+footer > ul {
     width: 141px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+footer > ul > li {
+    list-style-type: none;
 }
 
 .block {
@@ -410,7 +413,7 @@ footer > div {
 }
 
 footer, .stories {
-    background-image: url("image/global.png");
+    background-image: url("image/global.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -421,3 +424,10 @@ footer, .stories {
     opacity: 1;
 }
 
+header, section {
+    background-image: url("/image/header.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
